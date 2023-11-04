@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deva Anand</title>
+    <link rel="stylesheet" href="devanad.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <ul class="lg">
+                <a class="wynk" href="#Wynk">
+                    <li class="brand"><img src="wynk logo.jpeg" alt="Wynk"> Music Player</li>
+                </a>
+                <!-- <div class="srch">
+                    <form>
+
+                        <input class="search" type="search" placeholder="  &#128269;  Search Songs"
+                            id="serch-text-input">
+                        <button class="btn">Search</button>
+                    </form>
+                </div> -->
+
+            </ul>
+        </div>
+    </nav>
+    <nav class="nav">
+        <ul class="list">
+            <li><a class="link" href="#All">All</a></li>
+            <li><a class="link" href="#Trending">Trending</a></li>
+            <li><a class="link" href="oldsongs.html">Old Songs</a></li>
+            <li><a class="link" href="#New Songs">New Songs</a></li>
+            <div class="dropdown">
+                <button class="dropbtn">Moods & Genere</button>
+                <div class="dropdown-content">
+                    <a href="#">Party Songs</a>
+                    <a href="#">Dance Songs</a>
+                    <a href="#">Bollywood Songs</a>
+                    <a href="#">Romantic Songs</a>
+                    <a href="#">90's Hits</a>
+                    <a href="#">Ghazals</a>
+                    <a href="#">Bhakti Songs</a>
+                    <a href="#">LoFI Songs</a>
+
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Top Albums</button>
+                <div class="dropdown-content">
+                    <a href="#">Top Hindi Albums</a>
+                    <a href="#">Top English Albums</a>
+                    <a href="#">Top Telugu Albums</a>
+                    <a href="#">Top Tamil Albums</a>
+                    <a href="#">Top Bhojpuri Albums</a>
+                </div>
+            </div>
+            <li><a class="link" href="#Top Artists">Top Artists</a></li>
+            <div class="dropdown">
+                <button class="dropbtn">Top Playlists</button>
+                <div class="dropdown-content">
+                    <a href="#">Wynk Top 100 Songs</a>
+                    <a href="#">Trending Hindi Songs</a>
+                    <a href="#">Top English Songs</a>
+                    <a href="#">Trending Reel Songs</a>
+                    <a href="#">Top Romantic Hits</a>
+                </div>
+            </div>
+            <li><a class="link" href="#Podcasts">Podcasts</a></li>
+        </ul>
+    </nav>
+
+    <div class="sidenavbar" style="display: flex;">
+        <img src="images/zara.webp"> 
+        <div class="content">
+            <h1>Zara Hatke Zara Bachke</h1>
+            <div class="song">
+                <img src="images/zara.webp">
+                <a href="#" class="songName"> Phir AUr Kya Chahiye</a>
+                <span class="songplay"><span class="timestamp">04:46 </span>
+            </div>
+            <div class="song">
+                <img src="images/zara.webp">
+                <a href="#" class="songName"> Tere Vaaste</a>
+                <span class="songplay"><span class="timestamp">03:09 </span>
+            </div>
+            <div class="song">
+                <img src="images/zara.webp">
+                <a href="#" class="songName"> Saanjha</a>
+                <span class="songplay"><span class="timestamp">04:57 </span>
+            </div>
+        </div>
+    </div>
+   
+    <div class="music">
+        <audio id="musicPlayer" controls>
+            <source src="music/Phir Aur Kya Chahiye.mp3" type="audio/mp3">
+            <source src="music/Tere Vaaste.mp3" type="audio/mp3">
+            <source src="music/Saanjha.mp3" type="audio/mp3">
+        </audio>
+        <div class="player-controls">
+            <button id="previousButton">&lt;</button>
+            <button id="playButton">Play</button>
+            <button id="nextButton">&gt;</button>
+        </div>
+    </div>
+    <script src="zara.js"></script>
+</body>
+
+</html>

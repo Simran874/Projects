@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wynk Music</title>
+    <link rel="stylesheet" href="wynk.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <ul class="lg">
+                <a class="wynk" href="#Wynk">
+                    <li class="brand"><img src="wynk logo.jpeg" alt="Wynk">Wynk Music</li>
+                </a>
+                <!-- <div class="srch">
+                    <form>
+                        <input class="search" type="search" placeholder="    Search Songs" id="serch-text-input">
+                        <button class="btn">&#128269;</button>
+                    </form>
+                </div> -->
+
+            </ul>
+        </div>
+    </nav>
+    <nav class="nav">
+        <ul class="list">
+            <li><a class="link" href="#All">All</a></li>
+            <li><a class="link" href="#Trending">Trending</a></li>
+            <li><a class="link" href="#Old Songs">Old Songs</a></li>
+            <li><a class="link" href="#New Songs">New Songs</a></li>
+            <div class="dropdown">
+                <button class="dropbtn">Moods & Genere</button>
+                <div class="dropdown-content">
+                    <a href="#">Party Songs</a>
+                    <a href="#">Dance Songs</a>
+                    <a href="#">Bollywood Songs</a>
+                    <a href="#">Romantic Songs</a>
+                    <a href="#">90's Hits</a>
+                    <a href="#">Ghazals</a>
+                    <a href="#">Bhakti Songs</a>
+                    <a href="#">LoFI Songs</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Top Albums</button>
+                <div class="dropdown-content">
+                    <a href="#">Top Hindi Albums</a>
+                    <a href="#">Top English Albums</a>
+                    <a href="#">Top Telugu Albums</a>
+                    <a href="#">Top Tamil Albums</a>
+                    <a href="#">Top Bhojpuri Albums</a>
+                </div>
+            </div>
+            <li><a class="link" href="#Top Artists">Top Artists</a></li>
+            <div class="dropdown">
+                <button class="dropbtn">Top Playlists</button>
+                <div class="dropdown-content">
+                    <a href="#">Wynk Top 100 Songs</a>
+                    <a href="#">Trending Hindi Songs</a>
+                    <a href="#">Top English Songs</a>
+                    <a href="#">Trending Reel Songs</a>
+                    <a href="#">Top Romantic Hits</a>
+                </div>
+            </div>
+            <li><a class="link" href="#Podcasts">Podcasts</a></li>
+        </ul>
+    </nav>
+    <div class="new">
+        <div class="contain">
+            <h>Best Songs</h2>
+
+                <div class="songcontainer">
+                    <div class="song">
+                        <img src="images/deva.webp">
+                        <span class="songName"> Deva Deva</span>
+                        <span class="songplay"><span class="timestamp">04:39</span>
+                    </div>
+                    <div class="song">
+                        <img src="images/besabriyan.webp">
+                        <span class="songName"> Besabriyan</span>
+                        <span class="songplay"><span class="timestamp">04:15</span>
+                    </div>
+                    <div class="song">
+                        <img src="images/neele.webp">
+                        <span class="songName"> Neele Nelle Ambar Par (Kishore Kumar)</span>
+                        <span class="songplay"><span class="timestamp">05:12 </span>
+                    </div>
+                    <div class="song">
+                        <img src="images/challa.webp">
+                        <span class="songName"> Challa</span>
+                        <span class="songplay"><span class="timestamp">05:20 </span>
+                    </div>
+                    <div class="song">
+                        <img src="images/tumileya.webp">
+                        <span class="songName"> Tu Mileya</span>
+                        <span class="songplay"><span class="timestamp">03:13</span>
+                    </div>
+                    <div class="song">
+                        <img src="images/khairiyat.webp">
+                        <span class="songName"> Khairiyat</span>
+                        <span class="songplay"><span class="timestamp">04:40</span>
+                    </div>
+                    <div class="song">
+                        <img src="images/obessesd.webp">
+                        <span class="songName">Obsessed</span>
+                        <span class="songplay"><span class="timestamp">03:10 </span>
+                    </div>
+                    <div class="song">
+                        <img src="images/everything.webp">
+                        <span class="songName"> Everything at Once</span>
+                        <span class="songplay"><span class="timestamp">02:38 </span>
+                    </div>
+            
+                    <div class="song">
+                        <img src="images/ranjhaana.webp">
+                        <span class="songName"> Raanjhana</span>
+                        <span class="songplay"><span class="timestamp">04:16</span>
+                    </div>
+                    <div class="song">
+                        <img src="images/wallian.webp">
+                        <span class="songName"> Wallian</span>
+                        <span class="songplay"><span class="timestamp">03:38</span>
+                    </div>
+            
+                </div>
+                </div>
+            
+                <div class="music">
+                    <audio id="musicPlayer" controls>
+                        <source src="music/deva.mp3" type="audio/mp3">
+                        <source src="music/Besabriyaan.mp3" type="audio/mp3">
+                        <source src="music/Neele Neele Ambar.mp3" type="audio/mp3">
+                        <source src="music/Challa Jab.mp3" type="audio/mp3">
+                        <source src="music/Tu Mileya.mp3" type="audio/mp3">
+                        <source src="music/Khairiyat song.mp3" type="audio/mp3">
+                        <source src="music/Obsessed1.mp3" type="audio/mp3">
+                        <source src="music/Everything At.mp3" type="audio/mp3">
+                        <source src="music/Raanjhanaa Song.mp3" type="audio/mp3">
+                        <source src="music/Waalian - Harnoor.mp3" type="audio/mp3">
+                    </audio>
+                    <div class="player-controls">
+                        <button id="previousButton">&lt;</button>
+                        <button id="playButton">Play</button>
+                        <button id="nextButton">&gt;</button>
+                    </div>
+                </div>
+                <!-- <div class="scroll">
+            <a class="song" href=""><img class="cover" src="cover2.webp"></a>
+            <a class="song" href=""><img class="cover" src="cover1.webp"></a>
+            <a class="song" href=""><img class="cover" src="cover3.webp"></a>
+            <a class="song" href=""><img class="cover" src="cover4.webp"></a>
+            <a class="song" href=""><img class="cover" src="cover5.webp"></a>
+            <a class="song" href=""><img class="cover" src="cover6.webp"></a>
+        </div> -->
+                <!-- <div class="songcontainer">
+                    <div class="song">
+                        <img alt="1">
+                        <span class="songName"> Deva Deva</span>
+                        <span class="songplay"><span class="timestamp">04:39 <i id="0"
+                                    class="far  songItemPlay fa-play-circle"></i></span></i></span>
+                    </div>
+                    <div class="song">
+                        <img alt="1">
+                        <span class="songName"> Besabriyan</span>
+                        <span class="songplay"><span class="timestamp">04:15 <i id="1"
+                                    class="far  songItemPlay fa-play-circle"></i></span></i></span>
+                    </div>
+                    <div class="song">
+                        <img alt="1">
+                        <span class="songName"> Neele Nelle Ambar Par (Kishore Kumar)</span>
+                        <span class="songplay"><span class="timestamp">05:12 <i id="2"
+                                    class="far  songItemPlay fa-play-circle"></i></span></i></span>
+                    </div>
+                    <div class="song">
+                        <img alt="1">
+                        <span class="songName">Obsessed</span>
+                        <span class="songplay"><span class="timestamp">03:10 <i id="3"
+                                    class="far  songItemPlay fa-play-circle"></i></span></i></span>
+                    </div>
+                    <div class="song">
+                        <img alt="1">
+                        <span class="songName"> Everything at Once</span>
+                        <span class="songplay"><span class="timestamp">02:38 <i id="4"
+                                    class="far  songItemPlay fa-play-circle"></i></span></i></span>
+                    </div>
+                    <div class="song">
+                        <img alt="1">
+                        <span class="songName"> Tu Mileya</span>
+                        <span class="songplay"><span class="timestamp">03:13 <i id="5"
+                                    class="far  songItemPlay fa-play-circle"></i></span></i></span>
+                    </div>
+                    <div class="song">
+                        <img alt="1">
+                        <span class="songName"> Raanjhana</span>
+                        <span class="songplay"><span class="timestamp">04:16 <i id="6"
+                                    class="far  songItemPlay fa-play-circle"></i></span></i></span>
+                    </div>
+                    <div class="song">
+                        <img alt="1">
+                        <span class="songName"> Wallian</span>
+                        <span class="songplay"><span class="timestamp">03:38 <i id="7"
+                                    class="far  songItemPlay fa-play-circle"></i></span></i></span>
+                    </div>
+                    <div class="song">
+                        <img alt="1">
+                        <span class="songName"> Khairiyat</span>
+                        <span class="songplay"><span class="timestamp">04:40 <i id="8"
+                                    class="far  songItemPlay fa-play-circle"></i></span></i></span>
+                    </div>
+                    <div class="song">
+                        <img alt="1">
+                        <span class="songName"> Challa</span>
+                        <span class="songplay"><span class="timestamp">05:20 <i id="9"
+                                    class="far  fa-play-circle"></i></span></i></span>
+                    </div>
+                </div>
+        </div>
+    </div> 
+
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="icon">
+            <i class="fa-solid fa-2x fa-backward-step" id="previous" ></i>
+            <i class="far songItemPlay songItemPlay fa-2x fa-play-circle" id="masterPlay"></i>
+            <i class="fa-solid fa-2x fa-forward-step" id="next" ></i>
+        </div>
+        <div class="songinfo">
+            <img src="playing.gif" width="42px" alt="" id="gif"> Deva Deva - Arjit Singh
+        </div>
+    </div> -->
+
+    <script src="https://kit.fontawesome.com/81bcf0c0fa.js" crossorigin="anonymous"></script>
+    <script src="wynk.js"></script>
+
+</body>
+
+</html>
